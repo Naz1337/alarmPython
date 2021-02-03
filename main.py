@@ -84,6 +84,7 @@ def alarmWatch(alarms: List[Dict]):
                 playsound("alarm.mp3", False)
                 if not alarms[i]["repeating"]:
                     del alarms[i]
+                time.sleep(60)
             time.sleep(1/60)
         time.sleep(1/24)
 
